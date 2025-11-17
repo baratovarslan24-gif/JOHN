@@ -89,7 +89,69 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.recent-posts {
+  height: 650px;
+  background-color: #edf7fa;
+  color: #21243d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recent-posts__title {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 333%;
+}
+.recent-posts__link {
+  display: none;
+}
+.recent-p__card {
+  margin-bottom: 17px;
+  padding: 12px 8px 22px 19px;
+  max-width: 354px;
+  height: 266px;
+  background-color: #fff;
+}
+.r-p__card-title {
+  margin-bottom: 12px;
+}
+.r-p__link {
+  margin: 0 auto;
 
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 136%;
+  text-decoration: none;
+  color: #21243d;
+}
+.r-p__card-desc {
+  margin-bottom: 19px;
+  display: flex;
+}
+.recent__details {
+  font-weight: 400;
+  font-size: 16px;
+}
+.recent__details {
+  margin-right: 24px;
+}
+.r-d__category::after {
+  content: ",";
+}
+.r-d__category {
+  margin-right: 0;
+}
+.r-d__category::before {
+  content: "\00A0";
+}
+.r-d__category:first-child::before {
+  content: "";
+}
+.r-p__card-text {
+  font-weight: 400;
+  font-size: 16px;
+}
 @media screen and (min-width: 768px) {
   .header {
     max-width: 1000px;
@@ -131,5 +193,46 @@ body {
   }
   .hero__title {
     font-size: 44px;
+  }
+  .recent-posts__top {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 680px;
+  }
+  .recent-posts__title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 273%;
+  }
+  .recent-posts__link {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    text-decoration: none;
+    color: #00a8cc;
+  }
+  .recent-posts__container {
+    margin-top: 26px;
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .recent-p__card {
+    margin-bottom: 32px;
+    max-width: 418px;
+    max-height: 295px;
+  }
+  .r-p__link {
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .recent__details {
+    font-size: 18px;
+  }
+  .r-p__card-title {
+    margin-bottom: 17px;
   }
 }
