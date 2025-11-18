@@ -224,6 +224,24 @@ body {
   color: #21243d;
   margin-bottom: 17px;
 }
+.footer__list {
+  margin: 51px 71px 26px 71px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 35px;
+}
+.footer__img {
+  width: 30px;
+  height: 30px;
+}
+.footer__text {
+  margin-bottom: 54px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #21243d;
+}
 @media screen and (min-width: 768px) {
   .header {
     max-width: 1000px;
@@ -329,5 +347,9 @@ body {
     justify-content: space-between;
     gap: 18px;
     margin-bottom: 30px;
+  }
+  .footer__list {
+    margin: 26px auto;
+    width: 234px;
   }
 }
