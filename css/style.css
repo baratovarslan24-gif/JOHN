@@ -43,7 +43,7 @@ body {
   color: #000;
   text-decoration: none;
 }
-.header__menu-link:active {
+.active {
   color: #ff6464;
 }
 .hero {
@@ -268,6 +268,18 @@ body {
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 18px;
 }
+.works {
+  padding-top: 24px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.works__title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #21243d;
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
 @media screen and (min-width: 768px) {
   .header {
     max-width: 1000px;
@@ -377,5 +389,15 @@ body {
   .footer__list {
     margin: 26px auto;
     width: 234px;
+  }
+  .w-c__none-p {
+    display: none;
+  }
+  .works .work-card__img-wrapper {
+    width: 246px;
+    height: 184px;
+  }
+  .works .work-card__text {
+    width: 415px;
   }
 }
